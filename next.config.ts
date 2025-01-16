@@ -8,10 +8,12 @@ const nextConfig = {
       },
     ],
   },
+  devIndicators: {
+    appIsrStatus: false,
+  },
   async headers() {
     return [
       {
-        // Apply these headers to all routes
         source: "/(.*)",
         headers: [
           {
